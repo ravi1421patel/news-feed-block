@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/news-feed-block",
+  "version": "0.1.0",
+  "title": "News Feed Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "category": {
+      "type": "string",
+      "default": "technology"
+    },
+    "country": {
+      "type": "string",
+      "default": "us"
+    },
+    "source": {
+      "type": "string",
+      "default": ""
+    },
+    "articleCount": {
+      "type": "number",
+      "default": 5
+    }
+  },
+  "textdomain": "news-feed-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
